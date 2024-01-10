@@ -1,0 +1,51 @@
+/* about.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section img {
+    max-width: 40%;
+    height: auto;
+    margin-right: 100px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 750px; /* Змінено значення для зсуву вправо */
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #00BFFF;
+}

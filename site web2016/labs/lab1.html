@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab1.css">
+    <title>Реєстрація</title>
+</head>
+<body>
+
+    <form action="https://webhook.site/0f2aa727-e5f4-477e-bcfb-266df4b9e3c9" method="post">
+        <label for="username">Ім'я:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="lastname">Прізвище:</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Підтвердження паролю:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <label for="dob">Дата народження:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+            <option value="other">Бойовий гелікоптер</option>
+            <option value="other">Інша</option>
+        </select>
+
+        <input type="submit" value="Зареєструватися">
+    </form>
+
+</body>
+</html>
