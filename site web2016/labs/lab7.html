@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lab7.css">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+    body {
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    use {
+      text-transform: uppercase;
+      fill: none;
+      stroke-width: 4;
+      letter-spacing: 4px;
+      font: 80px Open Sans, Impact;
+      stroke-dasharray: 100%;
+      stroke-dashoffset: 100%;
+      -webkit-animation: dash 2s forwards;
+      animation: dash 2s forwards;
+    }
+
+    use:nth-child(2) {
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+    }
+
+    use:nth-child(3) {
+      -webkit-animation-delay: 4s;
+      animation-delay: 4s;
+    }
+
+    use:nth-child(4) {
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s;
+    }
+
+    use:nth-child(5) {
+      -webkit-animation-delay: 8s;
+      animation-delay: 8s;
+    }
+
+    @-webkit-keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg height="200" width="1000">
+    <symbol id="s-text">
+      <text x="20" y="120">З Новим 2024 роком</text>
+    </symbol>
+    <use xlink:href="#s-text" stroke="#F2385A"></use>
+    <use xlink:href="#s-text" stroke="#F5A503"></use>
+    <use xlink:href="#s-text" stroke="#E9F1DF"></use>
+    <use xlink:href="#s-text" stroke="#56D9CD"></use>
+    <use xlink:href="#s-text" stroke="#3AA1BF"></use>
+  </svg>
+</body>
+</html>

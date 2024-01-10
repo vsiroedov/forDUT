@@ -1,0 +1,80 @@
+/* 1. */
+li:first-child {
+    font-weight: bold;
+}
+
+/* 2. */
+a:last-child {
+    color: red;
+}
+
+/* 3.  */
+input[disabled] {
+    background-color: #ccc;
+}
+
+/* 4.  */
+div > p {
+    font-weight: bold;
+}
+
+/* 5.  */
+a[href^="https"] {
+    color: green;
+}
+
+/* 6.  */
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+/* 7.  */
+li:first-child,
+li:last-child {
+    font-size: 24px;
+}
+
+/* 8.  */
+div p {
+    font-size: 16px;
+}
+
+/* 9.  */
+input:checked {
+    background-color: lightblue;
+}
+
+/* 10. */
+li > a {
+    text-decoration: underline;
+}
+
+/* 11. */
+li:nth-child(even) {
+    font-weight: bold;
+}
+
+/* 12. */
+input[type="text"]:not([disabled]) {
+    background-color: gray;
+}
+
+/* 13.  */
+*:first-child > p {
+    font-size: 24px;
+}
+
+/* 14.  */
+.special + li {
+    text-decoration: line-through;
+}
+
+/* 15. */
+p::first-letter {
+    font-size: 36px;
+}
+
+/* 16. */
+a::after {
+    content: " ↗";
+}

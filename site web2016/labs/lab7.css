@@ -1,0 +1,52 @@
+
+body {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+svg {
+  overflow: visible;
+  width: 80vw;
+}
+
+text {
+  text-transform: uppercase;
+  font-family: 'Open Sans', Impact;
+  font-weight: 800;
+  font-size: 6vw;
+  fill: url(#gradient);
+  stroke-width: 4;
+  letter-spacing: 4px;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  animation: dash 2s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes gradientColor {
+  0% {
+    stop-color: #F2385A;
+  }
+  25% {
+    stop-color: #F5A503;
+  }
+  50% {
+    stop-color: #E9F1DF;
+  }
+  75% {
+    stop-color: #56D9CD;
+  }
+  100% {
+    stop-color: #3AA1BF;
+  }
+}
